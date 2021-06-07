@@ -16,6 +16,7 @@ body{
     font-family: 'OrticaLight';
     background: rgb(181,66,237);
     background: linear-gradient(90deg, rgba(181,66,237,1) 0%, rgba(208,66,237,1) 16%, rgba(173,193,43,1) 100%);
+    background-size: cover;
     color: white;
 }
 
