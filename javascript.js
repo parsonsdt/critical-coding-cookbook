@@ -22,6 +22,7 @@ $("#details").bind("click", function() {
 
 $("#home").bind("click", function() {
   $("#homepage").show();
+  $("desktopAnimation").show();
   $("#detailsTab").hide();
   $("#guidelinesTab").hide();
   $("#infoTab").hide();
