@@ -26,13 +26,13 @@ h1{
 }
 
 a{
-    color: white;
-    background-color: plum;
+    color: greenyellow;
+  
     text-decoration: none;
 }
 
 a:hover{
-    background-color: palevioletred;
+  font-family: 'Anthony';
 }
 
 
@@ -213,7 +213,7 @@ body {
   }
  
 #homeH1{
-    font-size: 300% !important;
+    font-size: 50px !important;
   }
  
 #homeText{
@@ -229,7 +229,7 @@ body {
     border-radius: 25px;
     border: 2px solid white;
     padding: 20px;
-    width: 20%;
+    width: 40%;
     font-size: xx-large;
     text-align: center;
 }
@@ -243,7 +243,7 @@ body {
     border-radius: 25px;
     border: 2px solid white;
     padding: 20px;
-    width: 20%;
+    width: 40%;
     font-size: xx-large;
     text-align: center;
 }
@@ -257,7 +257,7 @@ body {
     border-radius: 25px;
     border: 2px solid white;
     padding: 20px;
-    width: 20%;
+    width: 40%;
     font-size: xx-large;
     text-align: center;
 }
@@ -271,7 +271,7 @@ body {
   border-radius: 25px;
   border: 2px solid white;
   padding: 20px;
-  width: 20%;
+  width: 40%;
   font-size: xx-large;
   text-align: center;
 }
@@ -305,7 +305,7 @@ body {
 }
 
 #detailAnimation{
-    display: none;
+    display: block;
 }
 
 #detailsText{
