@@ -13,7 +13,7 @@
 
 
 body{
-    font-family: 'OrticaLight';
+font-family: 'Catamaran', sans-serif;
     background: rgb(181,66,237);
     background: linear-gradient(90deg, rgba(181,66,237,1) 0%, rgba(208,66,237,1) 16%, rgba(173,193,43,1) 100%);
     background-size: cover;
@@ -22,20 +22,31 @@ body{
 
 h1{
   font-family: "Anthony", cursive;
-  font-size: 500%;
+  font-size: 60pt;
+}
+
+h2{
+  font-family: "Anthony", cursive;
+  font-size: 25pt;
 }
 
 a{
     color: greenyellow;
-  
+    font-family: 'Anthony';
     text-decoration: none;
+    font-size: 25pt;
 }
 
 a:hover{
-  font-family: 'Anthony';
+  text-decoration: none;
 }
 
 
+.main {
+    width: 80%;
+    padding: 3% 10%;
+    
+}
 
 #header{
   display: flex;
@@ -43,75 +54,37 @@ a:hover{
   justify-content: space-evenly;
 }
 
-#info{
-    font-family: "Anthony", cursive;
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 20%;
-    text-align: center;
-}
-
-#info:hover{
-    border: 2px white dotted;
-}
-
-#details{
-    font-family: "Anthony", cursive;
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 20%;
-    text-align: center;
-}
-
-#details:hover{
-  border: 2px white dotted;
-}
-
-#guidelines{
-    font-family: "Anthony", cursive;
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 20%;
-    text-align: center;
-}
-
-#guidelines:hover{
-  border: 2px white dotted;
-}
-
-#home{
+#home, #guidelines, #details, #info{
   font-family: "Anthony", cursive;
-  border-radius: 25px;
+  border-radius: 50px;
   border: 2px solid white;
   padding: 20px;
   width: 20%;
   text-align: center;
 }
 
-#home:hover{
+#home:hover, #guidelines:hover, #details:hover, #info:hover{
   border: 2px white dotted;
+  cursor: pointer;  
 }
 
 .blob {
   position: absolute;
   top: 0;
   left: 0;
-  width: 55vmax;
+  width: 35vw;
   z-index: -1;
-  animation: move 10s ease-in-out infinite;
+  animation: move 30s ease-in-out infinite;
   transform-origin: 50% 50%;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 @keyframes move {
   0%   { transform: scale(1)   translate(10px, -30px); }
   38%  { transform: scale(0.8, 1) translate(60vw, 20vh) rotate(140deg); }
   40%  { transform: scale(0.8, 1) translate(60vw, 20vh) rotate(140deg); }
-  78%  { transform: scale(1.3) translate(0vw, 30vh) rotate(-20deg); }
-  80%  { transform: scale(1.3) translate(0vw, 30vh) rotate(-20deg); }
+  78%  { transform: scale(0.5) translate(0vw, 30vh) rotate(-20deg); }
+  80%  { transform: scale(0.5) translate(0vw, 30vh) rotate(-20deg); }
   100% { transform: scale(1)   translate(10px, -30px); }
 }
 
@@ -119,88 +92,60 @@ a:hover{
   position: absolute;
   top: 200;
   left: 200;
-  width: 55vmax;
+  width: 35vw;
   z-index: -1;
-  animation: move2 10s ease-in-out infinite;
+  animation: move2 30s ease-in-out infinite;
   transform-origin: 50% 50%;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 @keyframes move2 {
   0%   { transform: scale(1)   translate(40px, -10px); }
-  38%  { transform: scale(0.8, 1) translate(10vw, 50vh) rotate(180deg); }
-  40%  { transform: scale(0.8, 1) translate(10vw, 50vh) rotate(180deg); }
-  78%  { transform: scale(1.3) translate(40vw, 10vh) rotate(-80deg); }
-  80%  { transform: scale(1.3) translate(40vw, 10vh) rotate(-40deg); }
+  38%  { transform: scale(0.5) translate(10vw, 50vh) rotate(180deg); }
+  40%  { transform: scale(0.5) translate(10vw, 50vh) rotate(180deg); }
+  78%  { transform: scale(0.8, 1) translate(40vw, 10vh) rotate(-80deg); }
+  80%  { transform: scale(0.8, 1) translate(40vw, 10vh) rotate(-40deg); }
   100% { transform: scale(1)   translate(40px, -10px); }
 }
 
-#textHeader{
-  font-family: "Anthony", cursive !important;
+#homeText, #infoText, #detailsText, #guidelinesText{
+/*
+    border-radius: 25px;
+    border: 2px solid gray;
+*/
+    padding: 5%;
+/*
+    width: auto;
+    margin: auto;
+    overflow: scroll;
+*/
+    font-size: 18pt;
 }
 
 #homeText{
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 55%;
-    margin: auto;
     text-align: center;
 }
 
-#homeH2{
-    text-align: center;
-    margin: auto;
-    font-size: 200%;
+#infoText, #detailsText, #guidelinesText{
+    height: 90%;
 }
 
-#infoTab{
+#infoTab, #detailsTab, #guidelinesTab{
     display: none;
-}
-
-#infoText{
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin: auto;
-    overflow: scroll;
-    font-size: larger;
-}
-
-#detailsTab{
-    display: none;
-}
-
-#detailsText{
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin: auto;
-    overflow: scroll;
-    font-size: larger;
-}
-
-#guidelinesTab{
-    display: none;
-}
-
-#guidelinesText{
-    border-radius: 25px;
-    border: 2px solid white;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin: auto;
-    overflow: scroll;
-    font-size: larger;
 }
 
 #submitButton{
   font-family: "Anthony", cursive;
+  border-radius: 50px;
+  border: 2px solid greenyellow;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+#submitButton:hover{
+  border: 2px dotted greenyellow;
 }
 
 @media only screen 
@@ -211,18 +156,16 @@ a:hover{
 body {
     color: white;
   }
- 
+      
 #homeH1{
     font-size: 50px !important;
   }
- 
-#homeText{
-  border: none;
-  width: 90%;
-  height: 90%;
-  font-size: 200%;
-  overflow: visible;
- }
+      
+#homeH2{
+    text-align: center;
+    margin: auto;
+    font-size: 200%;
+}
 
 #info{
     font-family: "Anthony", cursive;
